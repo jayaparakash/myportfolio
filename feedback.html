@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstarp icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            height: 90vh;
+            background-color: rgb(231, 233, 251);
+        }
+        fieldset{
+            padding: 50px;
+        }
+
+        input{
+            border: none;
+            padding: 8px;
+            border-radius: 8px;
+            width: 100%;
+            margin: 4px;
+        }
+        input:focus{
+            outline: none;
+            border: 2px solid lightblue;
+            box-shadow: 2px 2px 0px lightblue;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+      <div class="m-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <img
+                src="./Images/images.png"
+                height="40"
+                width="40"
+                alt="logo"
+              />
+              <h2 class="fst-italic d-inline ms-4">JAYAPRAKASH</h2>
+            </a>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarCollapse"
+            >
+              <div class="navbar-nav ms-auto me-5">
+                <a href="./index.html" class="nav-item nav-link me-3">HOME</a>
+              
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+   <fieldset>
+    <legend>FEEDBACK FORM</legend>
+     <form action="http://localhost:3000/submit-feedback" method="POST">
+        <label for="">Name:</label><br>
+        <input type="text" name="name" placeholder="EnterName"><br>
+        <label for="">Email:</label><br>
+        <input type="email" name="email" placeholder="EnterEmail"><br>
+         <label for="">Mobile</label><br>
+          <input type="text" name="mobile" placeholder="Mobile"><br>
+         <label for="">FeedBack:</label><br>
+      <textarea name="message" id=""></textarea>
+      <input type="submit" value="submit">
+    </form>
+   </fieldset>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
